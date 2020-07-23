@@ -161,7 +161,7 @@ public class NioSslClient extends NioSslPeer {
      * Just like {@link NioSslClient#read(SocketChannel, SSLEngine)} it uses inner class' socket channel
      * and engine and should not be used by the client. {@link NioSslClient#read()} should be called instead.
      * 
-     * @param message - message to be sent to the server.
+     * @param socketChannel - SocketChannel.
      * @param engine - the engine used for encryption/decryption of the data exchanged between the two peers.
      * @throws Exception
      */
